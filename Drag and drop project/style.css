@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(31, 3, 3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left,
+#right {
+  min-height: 400px;
+  width: 300px;
+  border: 1px dotted white;
+  margin: 20px;
+}
+
+.list {
+  color: bisque;
+  height: 60px;
+  margin: 30px;
+  border: 1px solid red;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+}
+
+.list img {
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1> Engineer Survey form</h1>
+    <form id="form-id">
+        <div class="form-container"> 
+            <label for="Name"  class="Name">Name</label>
+            <input type="text"  id="Name"class="Name" placeholder="Enter your name" name="Name"   required>
+        </div>
+
+
+        <div class="form-container">
+            <label for="Email"  >Email</label>
+            <input type="Email" placeholder="Enter your email" id="Email" required>
+        </div>
+
+
+        <div class="form-container">
+            <label for="Age" >Age</label>
+            <input type="Age" placeholder="Enter your age" id="Age"required >
+        </div>
+        
+       
+        <div class="form-container">
+            <label for="option">Which option best Describes you?</label>
+            <select  id="option" required>
+                <option>Student</option>
+                <option>Intern</option>
+                <option>Profesional</option>
+                <option>others</option>
+            </select>
+        </div>
+
+
+        <div class="form-container">
+            <label for="Radio-button" id="Radio-button">Would you recommend GreeksforGeeks to a friend</label>
+        <label for="Yes" id="yes"  class="yes">
+             <input type="radio" name="radio" class="radio">Yes</input>
+            </label>
+        <label for="No" id="no" class="yes">
+            <input type="radio" name="radio" class="radio">No</input>
+        </label>
+        <label for="Maybe" id="maybe" class="yes">
+            <input type="radio" name="radio" class="radio">Maybe</input>
+        </label>
+        </div>
+
+
+        <div class="form-container">
+        <label for="check-box" id="check-box" >Languages known(check all that apply)</label>
+        <label for=""> <input type="checkbox" class="check-box" >C</label>
+        <label for="in-1">
+            <input type="checkbox" class="check-box">Python
+        </label>
+        <label for="in-1"">
+            <input type="checkbox" class="check-box">C++
+        </label>
+        <label for="in-3">
+            <input type="checkbox" class="check-box">Java
+        </label>
+        <label for="in-4">
+            <input type="checkbox" class="check-box">Javascript
+        </label>
+        <label for="in-5">
+            <input type="checkbox" class="check-box">Html
+        </label>
+        </div>
+
+
+        <div class="form-container" >
+        <label for="comments" >Any comments or suggestion</label>
+        <textarea type="text" id="comments" placeholder="Enter the Comments"></textarea>
+        </div>
+
+        <div class="form-container">
+            <button>Submit</button>
+        </div>
+        
+    
+
+
+
+    
+    
+   
+    </form>
+       
+       
+      
+
+
+    
+</body>
+</html>

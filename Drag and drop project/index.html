@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drag and drop using javascript</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="left">
+        <div class="list" draggable="true">
+          <img src="https://www.svgrepo.com/show/459043/drag-handle.svg" />
+          first
+        </div>
+        <div class="list" draggable="true">
+          <img src="https://www.svgrepo.com/show/459043/drag-handle.svg" />
+          Second
+        </div>
+        <div class="list" draggable="true">
+          <img src="https://www.svgrepo.com/show/459043/drag-handle.svg" />
+          Third
+        </div>
+        <div class="list" draggable="true">
+          <img src="https://www.svgrepo.com/show/459043/drag-handle.svg" />
+          fourth
+        </div>
+      </div>
+      <div id="right"></div>
+    </div>
+    <script>
+      let lists = document.getElementsByClassName("list");
+      let right_Box = document.getElementById("right");
+      let left_Box = document.getElementById("left");
+
+      for (list of lists) {
+        list.addEventListener("dragstart", function (e) {
+          let selected = e.target;
+
+          right_Box.addEventListener("dragover", function (e) {
+            e.preventDefault();
+          });
+
+          right_Box.addEventListener("drop", function (e) {
+            right_Box.appendChild(selected);
+            selected = null;
+          });
+
+          left_Box.addEventListener("dragover", function (e) {
+            e.preventDefault();
+          });
+
+          left_Box.addEventListener("drop", function (e) {
+            left_Box.appendChild(selected);
+            selected = null;
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
